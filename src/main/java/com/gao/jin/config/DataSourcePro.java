@@ -8,5 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class DataSourcePro {
     private String url;
     private String username;
+    private String password;
+    private String driveSourceClassName;
 
 }
