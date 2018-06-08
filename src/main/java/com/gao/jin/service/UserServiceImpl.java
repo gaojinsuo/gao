@@ -13,4 +13,5 @@ public class UserServiceImpl implements UserService {
     public int regist(User user) {
         return userMapper.regist(user);
     }
+
 }
