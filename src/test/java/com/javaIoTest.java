@@ -1,15 +1,12 @@
 package com;
 
-import com.gao.jin.FileUtils;
+import com.gao.jin.web.FileUtils;
 import com.gao.jin.dto.User;
 import org.springframework.mock.web.MockHttpServletResponse;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

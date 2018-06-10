@@ -6,6 +6,9 @@ import com.gao.jin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
 @RestController
 @RequestMapping("user")
 public class LoginController {
@@ -22,5 +25,10 @@ public class LoginController {
     @AopLog(userName = "gao",message = "error")
     public void regist(@RequestBody User user) throws Exception{
         int i = userService.regist(user);
+    }
+
+    @RequestMapping("/exportCsv")
+    public void exportCsv(HttpServletResponse httpServletResponse) throws IOException, IllegalAccessException {
+        userService.exportCsv(httpServletResponse);
     }
 }
