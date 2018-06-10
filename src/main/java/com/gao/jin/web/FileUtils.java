@@ -9,6 +9,8 @@ import java.util.List;
 public class FileUtils {
     public static <T> void exportCsv(HttpServletResponse response, File file, List<T> data, List<String> titles, List<String> propertys) throws IOException, IllegalAccessException {
         //防止乱码，把字节流转化成字符流，一个汉字占用两个字节，一个字符
+        //输入流：InputStream或者Reader：从文件中读到程序中；
+        //输出流：OutputStream或者Writer：从程序中输出到文件中；
         OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(file), "UTF-8");
         for (String title : titles) {
             osw.write(title);
