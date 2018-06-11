@@ -10,14 +10,6 @@ import javax.sql.DataSource;
 
 @Configuration
 public class DruidDataSourceConfig {
-    @Value("${spring.datasource.url}")
-    private String url;
-    @Value("${spring.datasource.driver-class-name}")
-    private String driveClassName;
-    @Value("${spring.datasource.username}")
-    private String username;
-    @Value("${spring.datasource.password}")
-    private String password;
 
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
@@ -26,4 +18,4 @@ public class DruidDataSourceConfig {
         return druidDataSource;
     }
 
-    }
+}
