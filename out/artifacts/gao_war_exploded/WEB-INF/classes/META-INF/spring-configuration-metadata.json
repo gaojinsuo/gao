@@ -1,0 +1,43 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.gao.jin.config.DruidDataSourceConfig",
+      "name": "spring.datasource",
+      "sourceMethod": "druidDataSource()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.gao.jin.config.RabbitMqConfig",
+      "name": "spring.rabbitmq",
+      "type": "com.gao.jin.config.RabbitMqConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.gao.jin.config.RabbitMqConfig",
+      "name": "spring.rabbitmq.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.gao.jin.config.RabbitMqConfig",
+      "name": "spring.rabbitmq.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.gao.jin.config.RabbitMqConfig",
+      "name": "spring.rabbitmq.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.gao.jin.config.RabbitMqConfig",
+      "name": "spring.rabbitmq.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.gao.jin.config.RabbitMqConfig",
+      "name": "spring.rabbitmq.viru-host",
+      "type": "java.lang.String"
+    }
+  ]
+}
