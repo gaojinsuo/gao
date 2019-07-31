@@ -2,6 +2,7 @@ package com;
 
 import com.gao.jin.web.FileUtils;
 import com.gao.jin.dto.User;
+import org.junit.Test;
 import org.springframework.mock.web.MockHttpServletResponse;
 
 import javax.servlet.http.HttpServletResponse;
@@ -60,4 +61,24 @@ public class javaIoTest {
         File file = new File("/Users/gaojinsuo/jinsuo.csv");
         FileUtils.exportCsv(response,file,list,titles,propertys);
     }
+
+    @Test
+    public void test1(){
+        String a = "ABCD";
+        String b = "DCBA";
+        if (a.compareTo(b)<0){
+            System.out.println(true);
+        }
+    }
+
+    @Test
+    public void test12(){
+        AopTest aopTest = new AopTest();
+        BaseTest baseTest = new BaseTest();
+        aopTest.a();
+        baseTest.a();
+        baseTest.a(1);
+    }
+
+
 }

@@ -8,6 +8,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-public class BaseTest {
+
+public class BaseTest extends AopTest{
+    public void a(int i){
+        System.out.println(i);
+    }
 }

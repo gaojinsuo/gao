@@ -1,6 +1,5 @@
 package com.gao.jin.config;
 
-import javafx.css.StyleableBooleanProperty;
 import lombok.Data;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -37,13 +36,14 @@ public class RabbitMqConfig {
         connectionFactory.setPassword(this.password);
         connectionFactory.setVirtualHost("/");
         connectionFactory.setPublisherConfirms(true);
-
         return connectionFactory;
     }
 
     @Bean
     public RabbitTemplate rabbitTemplate() {
         RabbitTemplate template = new RabbitTemplate(connectionFactory());
+        template.setMandatory(true);
+        template.setConfirmCallback(new Confirm());
         return template;
     }
     @Bean

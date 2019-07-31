@@ -1,0 +1,8 @@
+package com.gao.jin.web;
+
+public class Test {
+    public static void main(String[] args) {
+        System.out.println(B.c);
+    }
+
+}

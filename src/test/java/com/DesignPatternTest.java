@@ -10,7 +10,7 @@ import com.gao.jin.designpatterns.strategypattern.StudentDiscout;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class DesignPatternTest extends BaseTest{
+public class DesignPatternTest{
     @Autowired
     private ScoreOperation scoreOperation;
     @Test
